@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B209321226EB9E24000CE674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209321126EB9E24000CE674 /* AppDelegate.swift */; };
+		B209321426EB9E24000CE674 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209321326EB9E24000CE674 /* SceneDelegate.swift */; };
+		B209321626EB9E24000CE674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209321526EB9E24000CE674 /* ViewController.swift */; };
+		B209321926EB9E24000CE674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B209321726EB9E24000CE674 /* Main.storyboard */; };
+		B209321B26EB9E25000CE674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B209321A26EB9E25000CE674 /* Assets.xcassets */; };
+		B209321E26EB9E25000CE674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B209321C26EB9E25000CE674 /* LaunchScreen.storyboard */; };
+		B209322926EB9E26000CE674 /* ZaloProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209322826EB9E26000CE674 /* ZaloProjectTests.swift */; };
+		B209323426EB9E26000CE674 /* ZaloProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209323326EB9E26000CE674 /* ZaloProjectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B209322526EB9E26000CE674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B209320626EB9E24000CE674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B209320D26EB9E24000CE674;
+			remoteInfo = ZaloProject;
+		};
+		B209323026EB9E26000CE674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B209320626EB9E24000CE674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B209320D26EB9E24000CE674;
+			remoteInfo = ZaloProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B209320E26EB9E24000CE674 /* ZaloProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZaloProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B209321126EB9E24000CE674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B209321326EB9E24000CE674 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B209321526EB9E24000CE674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B209321826EB9E24000CE674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B209321A26EB9E25000CE674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B209321D26EB9E25000CE674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B209321F26EB9E25000CE674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B209322426EB9E26000CE674 /* ZaloProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaloProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B209322826EB9E26000CE674 /* ZaloProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloProjectTests.swift; sourceTree = "<group>"; };
+		B209322A26EB9E26000CE674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B209322F26EB9E26000CE674 /* ZaloProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaloProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B209323326EB9E26000CE674 /* ZaloProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloProjectUITests.swift; sourceTree = "<group>"; };
+		B209323526EB9E26000CE674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B209320B26EB9E24000CE674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B209322126EB9E26000CE674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B209322C26EB9E26000CE674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B209320526EB9E24000CE674 = {
+			isa = PBXGroup;
+			children = (
+				B209321026EB9E24000CE674 /* ZaloProject */,
+				B209322726EB9E26000CE674 /* ZaloProjectTests */,
+				B209323226EB9E26000CE674 /* ZaloProjectUITests */,
+				B209320F26EB9E24000CE674 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B209320F26EB9E24000CE674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B209320E26EB9E24000CE674 /* ZaloProject.app */,
+				B209322426EB9E26000CE674 /* ZaloProjectTests.xctest */,
+				B209322F26EB9E26000CE674 /* ZaloProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B209321026EB9E24000CE674 /* ZaloProject */ = {
+			isa = PBXGroup;
+			children = (
+				B209321126EB9E24000CE674 /* AppDelegate.swift */,
+				B209321326EB9E24000CE674 /* SceneDelegate.swift */,
+				B209321526EB9E24000CE674 /* ViewController.swift */,
+				B209321726EB9E24000CE674 /* Main.storyboard */,
+				B209321A26EB9E25000CE674 /* Assets.xcassets */,
+				B209321C26EB9E25000CE674 /* LaunchScreen.storyboard */,
+				B209321F26EB9E25000CE674 /* Info.plist */,
+			);
+			path = ZaloProject;
+			sourceTree = "<group>";
+		};
+		B209322726EB9E26000CE674 /* ZaloProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				B209322826EB9E26000CE674 /* ZaloProjectTests.swift */,
+				B209322A26EB9E26000CE674 /* Info.plist */,
+			);
+			path = ZaloProjectTests;
+			sourceTree = "<group>";
+		};
+		B209323226EB9E26000CE674 /* ZaloProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B209323326EB9E26000CE674 /* ZaloProjectUITests.swift */,
+				B209323526EB9E26000CE674 /* Info.plist */,
+			);
+			path = ZaloProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B209320D26EB9E24000CE674 /* ZaloProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B209323826EB9E26000CE674 /* Build configuration list for PBXNativeTarget "ZaloProject" */;
+			buildPhases = (
+				B209320A26EB9E24000CE674 /* Sources */,
+				B209320B26EB9E24000CE674 /* Frameworks */,
+				B209320C26EB9E24000CE674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZaloProject;
+			productName = ZaloProject;
+			productReference = B209320E26EB9E24000CE674 /* ZaloProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B209322326EB9E26000CE674 /* ZaloProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B209323B26EB9E26000CE674 /* Build configuration list for PBXNativeTarget "ZaloProjectTests" */;
+			buildPhases = (
+				B209322026EB9E26000CE674 /* Sources */,
+				B209322126EB9E26000CE674 /* Frameworks */,
+				B209322226EB9E26000CE674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B209322626EB9E26000CE674 /* PBXTargetDependency */,
+			);
+			name = ZaloProjectTests;
+			productName = ZaloProjectTests;
+			productReference = B209322426EB9E26000CE674 /* ZaloProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B209322E26EB9E26000CE674 /* ZaloProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B209323E26EB9E26000CE674 /* Build configuration list for PBXNativeTarget "ZaloProjectUITests" */;
+			buildPhases = (
+				B209322B26EB9E26000CE674 /* Sources */,
+				B209322C26EB9E26000CE674 /* Frameworks */,
+				B209322D26EB9E26000CE674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B209323126EB9E26000CE674 /* PBXTargetDependency */,
+			);
+			name = ZaloProjectUITests;
+			productName = ZaloProjectUITests;
+			productReference = B209322F26EB9E26000CE674 /* ZaloProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B209320626EB9E24000CE674 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B209320D26EB9E24000CE674 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					B209322326EB9E26000CE674 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = B209320D26EB9E24000CE674;
+					};
+					B209322E26EB9E26000CE674 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = B209320D26EB9E24000CE674;
+					};
+				};
+			};
+			buildConfigurationList = B209320926EB9E24000CE674 /* Build configuration list for PBXProject "ZaloProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B209320526EB9E24000CE674;
+			productRefGroup = B209320F26EB9E24000CE674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B209320D26EB9E24000CE674 /* ZaloProject */,
+				B209322326EB9E26000CE674 /* ZaloProjectTests */,
+				B209322E26EB9E26000CE674 /* ZaloProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B209320C26EB9E24000CE674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B209321E26EB9E25000CE674 /* LaunchScreen.storyboard in Resources */,
+				B209321B26EB9E25000CE674 /* Assets.xcassets in Resources */,
+				B209321926EB9E24000CE674 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B209322226EB9E26000CE674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B209322D26EB9E26000CE674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B209320A26EB9E24000CE674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B209321626EB9E24000CE674 /* ViewController.swift in Sources */,
+				B209321226EB9E24000CE674 /* AppDelegate.swift in Sources */,
+				B209321426EB9E24000CE674 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B209322026EB9E26000CE674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B209322926EB9E26000CE674 /* ZaloProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B209322B26EB9E26000CE674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B209323426EB9E26000CE674 /* ZaloProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B209322626EB9E26000CE674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B209320D26EB9E24000CE674 /* ZaloProject */;
+			targetProxy = B209322526EB9E26000CE674 /* PBXContainerItemProxy */;
+		};
+		B209323126EB9E26000CE674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B209320D26EB9E24000CE674 /* ZaloProject */;
+			targetProxy = B209323026EB9E26000CE674 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B209321726EB9E24000CE674 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B209321826EB9E24000CE674 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B209321C26EB9E25000CE674 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B209321D26EB9E25000CE674 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B209323626EB9E26000CE674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B209323726EB9E26000CE674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B209323926EB9E26000CE674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZaloProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Long.ZaloProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B209323A26EB9E26000CE674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZaloProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Long.ZaloProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B209323C26EB9E26000CE674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZaloProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Long.ZaloProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZaloProject.app/ZaloProject";
+			};
+			name = Debug;
+		};
+		B209323D26EB9E26000CE674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZaloProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Long.ZaloProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZaloProject.app/ZaloProject";
+			};
+			name = Release;
+		};
+		B209323F26EB9E26000CE674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZaloProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Long.ZaloProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZaloProject;
+			};
+			name = Debug;
+		};
+		B209324026EB9E26000CE674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZaloProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Long.ZaloProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZaloProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B209320926EB9E24000CE674 /* Build configuration list for PBXProject "ZaloProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B209323626EB9E26000CE674 /* Debug */,
+				B209323726EB9E26000CE674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B209323826EB9E26000CE674 /* Build configuration list for PBXNativeTarget "ZaloProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B209323926EB9E26000CE674 /* Debug */,
+				B209323A26EB9E26000CE674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B209323B26EB9E26000CE674 /* Build configuration list for PBXNativeTarget "ZaloProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B209323C26EB9E26000CE674 /* Debug */,
+				B209323D26EB9E26000CE674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B209323E26EB9E26000CE674 /* Build configuration list for PBXNativeTarget "ZaloProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B209323F26EB9E26000CE674 /* Debug */,
+				B209324026EB9E26000CE674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B209320626EB9E24000CE674 /* Project object */;
+}
