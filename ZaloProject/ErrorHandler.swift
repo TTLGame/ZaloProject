@@ -8,5 +8,4 @@
 import Foundation
 enum DataError: Error{
     case failToUnwrapItems
-    case invalidURL
 }

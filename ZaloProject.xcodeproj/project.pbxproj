@@ -152,11 +152,19 @@
 		B209324A26ECC7FE000CE674 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B209324526EC9D79000CE674 /* MainTableViewController.swift */,
+				B2A9E69F26ED188000738087 /* ViewController */,
 				B209324126EC809D000CE674 /* MainTableViewCell.swift */,
-				B209321526EB9E24000CE674 /* ViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B2A9E69F26ED188000738087 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B209324526EC9D79000CE674 /* MainTableViewController.swift */,
+				B209321526EB9E24000CE674 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

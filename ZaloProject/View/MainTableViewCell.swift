@@ -32,6 +32,8 @@ class MainTableViewCell: UITableViewCell {
         likeBtnOutlet.setTitle("Like", for: .normal)
         totalLikesUILabel.text = "0 likes"
     }
+    
+    
     //polulateCell
     func populateCell(with dataAPI: [Post], userLike:[Int], index:Int){
         mainUIImageView.image = UIImage(named: "LoadingImage")

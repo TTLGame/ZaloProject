@@ -20,8 +20,20 @@ extension ViewController:UITableViewDelegate{
         viewSearchBar.searchBar.resignFirstResponder()
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if (scrollView.contentOffset.y > 1){
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        
+        // turn off keyboard when scrolling
+        if (offsetY > 1){
             viewSearchBar.dismiss(animated: true)
+        }
+        
+        // loading more image when go down
+        print(offsetY)
+        print(contentHeight - scrollView.frame.height*4)
+        if (offsetY > contentHeight - scrollView.frame.height*4 && !isLoading){
+            print("Im in")
+            loadMoreData()
         }
     }
 }
@@ -29,6 +41,7 @@ extension ViewController:UITableViewDelegate{
 //MARK: Datasource
 
 extension ViewController:UITableViewDataSource{
+    
     //table view datasource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return data.dataAPI.count
@@ -73,9 +86,26 @@ extension ViewController:UISearchBarDelegate{
     @objc func searchForKeyword(_ timer: Timer) {
         
         // retrieve the keyword from user info
-        let keyword = timer.userInfo!
+        let keyword = String(describing: timer.userInfo!)
         
-        print("Searching for keyword \(keyword)")
+        //reset data
+        if (keyword == ""){
+            data.currentPage = 1
+            data.reset()
+            type = 1
+            loadData(type:1, APIUrl: "https://api.unsplash.com/photos?page=")
+        } else {
+            data.currentPage = 1
+            data.reset()
+            
+            //save the search information
+            type = 2
+            self.keyword = keyword
+            
+            loadData(type:2, APIUrl: "https://api.unsplash.com/search/photos?query="+keyword+"&page=")
+        }
+       
+        tableView.reloadData()
     }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         viewSearchBar.dismiss(animated: true)
@@ -83,7 +113,11 @@ extension ViewController:UISearchBarDelegate{
         viewSearchBar.searchBar.text = ""
         searchBar.resignFirstResponder()
         
-        //Reload Data
+        //Reset Data and reload table
+        data.currentPage = 1
+        data.reset()
+        type = 1
+        loadData(type: 1, APIUrl: "https://api.unsplash.com/photos?page=")
         self.tableView.reloadData()
     }
     

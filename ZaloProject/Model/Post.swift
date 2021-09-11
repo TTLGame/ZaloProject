@@ -16,7 +16,6 @@ class Post{
         self.userName = username?["name"] as? String ?? "Username"
         
         self.totalLikes = value["likes"] as? Int ?? 0
-        self.imageUrl = "s"
         
         // unwrap image url
         let url = value["urls"] as? [String:Any]
