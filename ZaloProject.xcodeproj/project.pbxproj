@@ -15,6 +15,11 @@
 		B209321E26EB9E25000CE674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B209321C26EB9E25000CE674 /* LaunchScreen.storyboard */; };
 		B209322926EB9E26000CE674 /* ZaloProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209322826EB9E26000CE674 /* ZaloProjectTests.swift */; };
 		B209323426EB9E26000CE674 /* ZaloProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209323326EB9E26000CE674 /* ZaloProjectUITests.swift */; };
+		B209324226EC809D000CE674 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209324126EC809D000CE674 /* MainTableViewCell.swift */; };
+		B209324426EC9310000CE674 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209324326EC9310000CE674 /* Post.swift */; };
+		B209324626EC9D79000CE674 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209324526EC9D79000CE674 /* MainTableViewController.swift */; };
+		B209324826EC9E9D000CE674 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209324726EC9E9D000CE674 /* ErrorHandler.swift */; };
+		B209324C26ECCA8B000CE674 /* ReadAndFetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209324B26ECCA8B000CE674 /* ReadAndFetchData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		B209322F26EB9E26000CE674 /* ZaloProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaloProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B209323326EB9E26000CE674 /* ZaloProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloProjectUITests.swift; sourceTree = "<group>"; };
 		B209323526EB9E26000CE674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B209324126EC809D000CE674 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		B209324326EC9310000CE674 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B209324526EC9D79000CE674 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		B209324726EC9E9D000CE674 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		B209324B26ECCA8B000CE674 /* ReadAndFetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadAndFetchData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,16 @@
 		B209321026EB9E24000CE674 /* ZaloProject */ = {
 			isa = PBXGroup;
 			children = (
+				B209324A26ECC7FE000CE674 /* View */,
+				B209324926ECC7F0000CE674 /* Model */,
 				B209321126EB9E24000CE674 /* AppDelegate.swift */,
 				B209321326EB9E24000CE674 /* SceneDelegate.swift */,
-				B209321526EB9E24000CE674 /* ViewController.swift */,
 				B209321726EB9E24000CE674 /* Main.storyboard */,
 				B209321A26EB9E25000CE674 /* Assets.xcassets */,
 				B209321C26EB9E25000CE674 /* LaunchScreen.storyboard */,
 				B209321F26EB9E25000CE674 /* Info.plist */,
+				B209324726EC9E9D000CE674 /* ErrorHandler.swift */,
+				B209324B26ECCA8B000CE674 /* ReadAndFetchData.swift */,
 			);
 			path = ZaloProject;
 			sourceTree = "<group>";
@@ -126,6 +139,24 @@
 				B209323526EB9E26000CE674 /* Info.plist */,
 			);
 			path = ZaloProjectUITests;
+			sourceTree = "<group>";
+		};
+		B209324926ECC7F0000CE674 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B209324326EC9310000CE674 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B209324A26ECC7FE000CE674 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B209324526EC9D79000CE674 /* MainTableViewController.swift */,
+				B209324126EC809D000CE674 /* MainTableViewCell.swift */,
+				B209321526EB9E24000CE674 /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B209321626EB9E24000CE674 /* ViewController.swift in Sources */,
+				B209324826EC9E9D000CE674 /* ErrorHandler.swift in Sources */,
 				B209321226EB9E24000CE674 /* AppDelegate.swift in Sources */,
+				B209324226EC809D000CE674 /* MainTableViewCell.swift in Sources */,
+				B209324C26ECCA8B000CE674 /* ReadAndFetchData.swift in Sources */,
 				B209321426EB9E24000CE674 /* SceneDelegate.swift in Sources */,
+				B209324626EC9D79000CE674 /* MainTableViewController.swift in Sources */,
+				B209324426EC9310000CE674 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
