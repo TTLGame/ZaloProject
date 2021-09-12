@@ -47,17 +47,17 @@ extension ViewController:UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.identifier, for: indexPath) as! MainTableViewCell
-        
+        cell.tag = indexPath.row
         //create data for cell
         do {
-            try  cell.populateCell(with: data.dataAPI, userLike: data.userLike, index: indexPath.row)
+            try cell.populateCell(with: data.dataAPI, userLike: data.userLike, index: indexPath.row)
         } catch DataError.failToUnwrapItems {
             print("Fail to unwrap item")
         }
         catch{
             print("Fail to load cell")
         }
-       
+        
         //Implement action for like btn
         cell.likeBtnOutlet.tag = indexPath.row
         cell.likeBtnOutlet.addTarget(self, action: #selector(ViewController.likeBtnClicked(sender:)), for: .touchUpInside)

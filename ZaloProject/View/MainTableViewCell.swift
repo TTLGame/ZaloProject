@@ -40,7 +40,7 @@ class MainTableViewCell: UITableViewCell {
         guard let url = URL(string: dataAPI[index].imageUrl) else {throw DataError.failToUnwrapItems}
         
         //Read image data
-        mainUIImageView.loadImage(imageURL: url , placeholder: "LoadingImage"){ result in
+        mainUIImageView.loadImage(index:index, cell:self, imageURL: url , placeholder: "LoadingImage"){ result in
             switch result{
             case DataError.invalidURL?:
                 print("Invalid URL")
@@ -69,7 +69,7 @@ extension UITableViewCell{
 // image Cache
 let imageCache = NSCache<AnyObject, UIImage>()
 extension UIImageView{
-    func loadImage(imageURL: URL,placeholder: String, onError: @escaping (Error?)-> Void) {
+    func loadImage(index:Int, cell: MainTableViewCell,imageURL: URL,placeholder: String, onError: @escaping (Error?)-> Void) {
         self.image = UIImage(named: placeholder)
         if let cachdImage = imageCache.object(forKey: imageURL as AnyObject){
             self.image = cachdImage
@@ -80,13 +80,17 @@ extension UIImageView{
             data, response, error in
             if error == nil{
                 DispatchQueue.main.async {
-                    guard let image = UIImage(data: data!) else {
-                        onError(DataError.invalidURL)
-                        return
+                    print("\(cell.tag) \(index)")
+                    
+                    if (cell.tag == index){
+                        guard let image = UIImage(data: data!) else {
+                            onError(DataError.invalidURL)
+                            return
+                        }
+                        let newImage = image.resized(withPercentage: 0.1)!
+                        imageCache.setObject(newImage, forKey: imageURL as AnyObject)
+                        self.image = newImage
                     }
-                    let newImage = image.resized(withPercentage: 0.1)!
-                    imageCache.setObject(newImage, forKey: imageURL as AnyObject)
-                    self.image = newImage
                 }
             }
         }
