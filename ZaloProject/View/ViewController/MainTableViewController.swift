@@ -39,6 +39,7 @@ extension ViewController:UITableViewDelegate{
 
 extension ViewController:UITableViewDataSource{
     
+    
     //table view datasource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return data.dataAPI.count
@@ -57,7 +58,6 @@ extension ViewController:UITableViewDataSource{
             print("Fail to load cell")
         }
        
-        
         //Implement action for like btn
         cell.likeBtnOutlet.tag = indexPath.row
         cell.likeBtnOutlet.addTarget(self, action: #selector(ViewController.likeBtnClicked(sender:)), for: .touchUpInside)

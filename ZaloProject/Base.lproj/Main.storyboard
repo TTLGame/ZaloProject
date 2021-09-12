@@ -48,12 +48,15 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJd-kr-WuJ" userLabel="UserName">
                                                             <rect key="frame" x="10" y="5" width="48" height="24"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="24" id="5Jr-fN-MPW"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgC-Tl-tcZ" userLabel="TotalLike">
-                                                            <rect key="frame" x="366" y="40" width="38" height="18"/>
+                                                            <rect key="frame" x="366" y="40" width="38" height="24"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -65,12 +68,14 @@
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="t7j-bX-UED" firstAttribute="top" secondItem="dJd-kr-WuJ" secondAttribute="bottom" constant="5" id="0pA-Hq-aEt"/>
-                                                        <constraint firstItem="dJd-kr-WuJ" firstAttribute="top" secondItem="n0d-wW-2tK" secondAttribute="top" constant="5" id="2Ex-CT-SV9"/>
-                                                        <constraint firstItem="dJd-kr-WuJ" firstAttribute="leading" secondItem="n0d-wW-2tK" secondAttribute="leading" constant="10" id="6lm-zY-Df7"/>
-                                                        <constraint firstItem="t7j-bX-UED" firstAttribute="leading" secondItem="n0d-wW-2tK" secondAttribute="leading" constant="10" id="B5p-9I-CBK"/>
-                                                        <constraint firstAttribute="trailing" secondItem="cgC-Tl-tcZ" secondAttribute="trailing" constant="10" id="JSH-ll-J9Z"/>
-                                                        <constraint firstItem="cgC-Tl-tcZ" firstAttribute="top" secondItem="n0d-wW-2tK" secondAttribute="top" constant="40" id="b5F-w8-oV3"/>
+                                                        <constraint firstAttribute="bottom" secondItem="t7j-bX-UED" secondAttribute="bottom" constant="6.5" id="3IC-jc-HVw"/>
+                                                        <constraint firstItem="dJd-kr-WuJ" firstAttribute="top" secondItem="n0d-wW-2tK" secondAttribute="top" constant="5" id="7G9-Eg-pxX"/>
+                                                        <constraint firstAttribute="bottom" secondItem="cgC-Tl-tcZ" secondAttribute="bottom" constant="6.5" id="KBq-aY-9y8"/>
+                                                        <constraint firstItem="cgC-Tl-tcZ" firstAttribute="top" secondItem="n0d-wW-2tK" secondAttribute="top" constant="40" id="Obc-ik-GoU"/>
+                                                        <constraint firstItem="t7j-bX-UED" firstAttribute="leading" secondItem="n0d-wW-2tK" secondAttribute="leading" constant="10" id="bqF-mZ-p1v"/>
+                                                        <constraint firstItem="dJd-kr-WuJ" firstAttribute="leading" secondItem="n0d-wW-2tK" secondAttribute="leading" constant="10" id="cig-Qc-MYw"/>
+                                                        <constraint firstAttribute="trailing" secondItem="cgC-Tl-tcZ" secondAttribute="trailing" constant="10" id="iFs-5g-c0L"/>
+                                                        <constraint firstItem="t7j-bX-UED" firstAttribute="top" secondItem="dJd-kr-WuJ" secondAttribute="bottom" constant="5" id="yUf-l7-5Lj"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>

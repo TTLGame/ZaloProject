@@ -42,7 +42,6 @@ class ViewController: UIViewController {
                     self.tableView.reloadData()
                     self.isLoading = false
                 }
-               
             }
         }
     }
@@ -77,6 +76,7 @@ class ViewController: UIViewController {
         self.viewSearchBar.searchBar.delegate = self
         tableView.dataSource = self
         tableView.delegate = self
+        
         self.tableView.reloadData()
     }
 }

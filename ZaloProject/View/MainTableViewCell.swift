@@ -36,9 +36,8 @@ class MainTableViewCell: UITableViewCell {
     
     //polulateCell
     func populateCell(with dataAPI: [Post], userLike:[Int], index:Int) throws{
-        mainUIImageView.image = UIImage(named: "LoadingImage")
-        
-        guard let url = URL(string: dataAPI[index].imageUrl + "/" + "\(20)" + "/" + "\(20)") else {throw DataError.failToUnwrapItems}
+    
+        guard let url = URL(string: dataAPI[index].imageUrl) else {throw DataError.failToUnwrapItems}
         
         //Read image data
         mainUIImageView.loadImage(imageURL: url , placeholder: "LoadingImage"){ result in
@@ -85,11 +84,24 @@ extension UIImageView{
                         onError(DataError.invalidURL)
                         return
                     }
-                    imageCache.setObject(image, forKey: imageURL as AnyObject)
-                    self.image = image
+                    let newImage = image.resized(withPercentage: 0.1)!
+                    imageCache.setObject(newImage, forKey: imageURL as AnyObject)
+                    self.image = newImage
                 }
             }
         }
         task.resume()
+    }
+}
+
+//resize image to reduce loading time
+extension UIImage {
+    func resized(withPercentage percentage: CGFloat, isOpaque: Bool = true) -> UIImage? {
+        let canvas = CGSize(width: size.width * percentage, height: size.height * percentage)
+        let format = imageRendererFormat
+        format.opaque = isOpaque
+        return UIGraphicsImageRenderer(size: canvas, format: format).image {
+            _ in draw(in: CGRect(origin: .zero, size: canvas))
+        }
     }
 }
