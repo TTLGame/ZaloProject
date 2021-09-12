@@ -109,16 +109,15 @@
 		B209321026EB9E24000CE674 /* ZaloProject */ = {
 			isa = PBXGroup;
 			children = (
+				B2AD916126EDD796008148DB /* Delegate */,
 				B209324A26ECC7FE000CE674 /* View */,
-				B209324926ECC7F0000CE674 /* Model */,
-				B209321126EB9E24000CE674 /* AppDelegate.swift */,
-				B209321326EB9E24000CE674 /* SceneDelegate.swift */,
+				B209324926ECC7F0000CE674 /* View Model */,
 				B209321726EB9E24000CE674 /* Main.storyboard */,
+				B209324726EC9E9D000CE674 /* ErrorHandler.swift */,
+				B209324B26ECCA8B000CE674 /* ReadAndFetchData.swift */,
 				B209321A26EB9E25000CE674 /* Assets.xcassets */,
 				B209321C26EB9E25000CE674 /* LaunchScreen.storyboard */,
 				B209321F26EB9E25000CE674 /* Info.plist */,
-				B209324726EC9E9D000CE674 /* ErrorHandler.swift */,
-				B209324B26ECCA8B000CE674 /* ReadAndFetchData.swift */,
 			);
 			path = ZaloProject;
 			sourceTree = "<group>";
@@ -141,12 +140,12 @@
 			path = ZaloProjectUITests;
 			sourceTree = "<group>";
 		};
-		B209324926ECC7F0000CE674 /* Model */ = {
+		B209324926ECC7F0000CE674 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
 				B209324326EC9310000CE674 /* Post.swift */,
 			);
-			path = Model;
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		B209324A26ECC7FE000CE674 /* View */ = {
@@ -165,6 +164,15 @@
 				B209321526EB9E24000CE674 /* ViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B2AD916126EDD796008148DB /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B209321126EB9E24000CE674 /* AppDelegate.swift */,
+				B209321326EB9E24000CE674 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -29,10 +29,7 @@ extension ViewController:UITableViewDelegate{
         }
         
         // loading more image when go down
-        print(offsetY)
-        print(contentHeight - scrollView.frame.height*4)
-        if (offsetY > contentHeight - scrollView.frame.height*4 && !isLoading){
-            print("Im in")
+        if (offsetY > contentHeight - scrollView.frame.height*2 && !isLoading){
             loadMoreData()
         }
     }
@@ -51,7 +48,15 @@ extension ViewController:UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.identifier, for: indexPath) as! MainTableViewCell
         
         //create data for cell
-        cell.populateCell(with: data.dataAPI, userLike: data.userLike, index: indexPath.row)
+        do {
+            try  cell.populateCell(with: data.dataAPI, userLike: data.userLike, index: indexPath.row)
+        } catch DataError.failToUnwrapItems {
+            print("Fail to unwrap item")
+        }
+        catch{
+            print("Fail to load cell")
+        }
+       
         
         //Implement action for like btn
         cell.likeBtnOutlet.tag = indexPath.row

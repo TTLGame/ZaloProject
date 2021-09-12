@@ -68,8 +68,8 @@ class ReadAndFetchData{
         currentPage += 1
         
         guard let unwrappedUrl =  URL(string:url) else { throw DataError.failToUnwrapItems}
+        
         //read JSON API data
-        print(unwrappedUrl)
         let task = URLSession.shared.dataTask(with: unwrappedUrl){
             data, response, error in
             if (error == nil){

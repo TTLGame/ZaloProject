@@ -35,11 +35,20 @@ class MainTableViewCell: UITableViewCell {
     
     
     //polulateCell
-    func populateCell(with dataAPI: [Post], userLike:[Int], index:Int){
+    func populateCell(with dataAPI: [Post], userLike:[Int], index:Int) throws{
         mainUIImageView.image = UIImage(named: "LoadingImage")
         
-        guard let url = URL(string: dataAPI[index].imageUrl) else {return}
-        mainUIImageView.loadImage(imageURL: url, placeholder: "LoadingImage")
+        guard let url = URL(string: dataAPI[index].imageUrl + "/" + "\(20)" + "/" + "\(20)") else {throw DataError.failToUnwrapItems}
+        
+        //Read image data
+        mainUIImageView.loadImage(imageURL: url , placeholder: "LoadingImage"){ result in
+            switch result{
+            case DataError.invalidURL?:
+                print("Invalid URL")
+            default:
+                print("Fail to load Image")
+            }
+        }
        
         if (userLike[index] == 0){
             likeBtnOutlet.setTitle("Like", for: .normal)
@@ -57,19 +66,25 @@ extension UITableViewCell{
         return String(describing: self)
     }
 }
+
+// image Cache
 let imageCache = NSCache<AnyObject, UIImage>()
 extension UIImageView{
-    func loadImage(imageURL: URL,placeholder: String){
+    func loadImage(imageURL: URL,placeholder: String, onError: @escaping (Error?)-> Void) {
         self.image = UIImage(named: placeholder)
         if let cachdImage = imageCache.object(forKey: imageURL as AnyObject){
             self.image = cachdImage
             return
         }
+       
         let task = URLSession.shared.dataTask(with: imageURL){
             data, response, error in
             if error == nil{
                 DispatchQueue.main.async {
-                    guard let image = UIImage(data: data!) else {return}
+                    guard let image = UIImage(data: data!) else {
+                        onError(DataError.invalidURL)
+                        return
+                    }
                     imageCache.setObject(image, forKey: imageURL as AnyObject)
                     self.image = image
                 }
